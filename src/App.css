@@ -1,0 +1,371 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.login-button-style {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #555;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 10px;
+  font-size: 16px;
+}
+.button-style {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.google-logo {
+  background-image: url("./assets/google_logo.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.facebook-logo {
+  background-image: url("./assets/facebook-logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.trivia-table-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150%;
+  background-size: cover;
+  background-repeat: repeat-y;
+  background-position: center;
+ 
+}
+
+.text-container {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-family: 'YourFunkyFont', sans-serif;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.trivia-table-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150%;
+  background-size: cover;
+  background-repeat: repeat-y;
+  background-position: center;
+ 
+}
+
+/* Quiz.css */
+.card {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.question {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+  margin-left: -230px;
+}
+
+.option {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 16px;
+  margin-left: -230px;
+}
+
+.option label {
+  cursor: pointer;
+}
+
+.selectedOption {
+  color: green;
+  font-weight: bold;
+}
+
+.hint {
+  font-style: italic;
+  color: #666;
+  margin-top: 24px;
+}
+
+.buttons {
+  display: flex;
+  gap: 16px;
+  margin-top: 24px; 
+}
+
+.button {
+  flex: 1;
+  text-align: center;
+}
+
+.timer {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 16px;
+}
+
+/* Styling for the main container */
+.box {
+  display: flex;
+}
+
+/* Styling for the drawer overlay */
+.drawer-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 999; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styling for the drawer card */
+.drawer-card {
+  width: 200px; 
+  height: 100%;
+  background-color: #ffd300; 
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column; 
+  gap: 20px; 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.drawer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.drawer-title {
+  font-size: 16px; 
+  font-weight: bold;
+  color: #0033cc; 
+}
+
+.close-icon {
+  cursor: pointer;
+}
+
+/* Styling for individual team */
+.team-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Styling for team name */
+.team-name {
+  font-size: 14px; 
+  font-weight: bold;
+  color: #0033cc; 
+  text-transform: uppercase; 
+}
+
+/* Styling for team members */
+.team-members {
+  display: flex;
+  flex-direction: column; 
+  gap: 5px; 
+  font-size: 14px; 
+  font-weight: bold; 
+}
+
+/* Styling for individual team member */
+.team-member {
+  padding: 8px;
+  border-radius: 4px;
+}
+
+/* Alternate background colors for team members */
+.team-member:nth-child(even) {
+  background-color: white;
+  width: 219px;
+}
+
+.team-member:nth-child(odd) {
+  background-color: #f2f2f2;
+  width: 219px;
+}
+
+/* Horizontal line between team data */
+.team-data:not(:first-child) {
+  border-top: 1px solid #d3d3d3;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+/* Styling for team score */
+.team-score {
+  font-size: 16px; 
+  font-weight: bold;
+  color: #008000; 
+}
+
+
+
+/* CSS for Chat */
+
+.chat-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+  width: 300px;
+  margin: 0 auto;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 2px solid #3b5998;
+  height: 100%
+}
+.header {
+  background-color: #3b5998;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+.messages {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: 80%;
+  overflow-y: auto;
+  padding: 10px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+.message {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+
+.user {
+  font-weight: bold;
+  margin-right: 10px;
+  color: #333;
+}
+
+.new-message-form {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+}
+
+.new-message-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+  color: #333;
+  padding: 10px;
+  border-radius: 5px 0 0 5px;
+}
+
+.send-button {
+  border: none;
+  outline: none;
+  background: #3b5998;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 0%;
+}
